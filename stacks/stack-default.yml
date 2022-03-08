@@ -1,0 +1,25 @@
+# Basic LAMP stack
+# - Apache 2.4
+# - MySQL 5.6
+# - PHP 7.2
+
+version: "3.9"
+
+services:
+  # http(s)://VIRTUAL_HOST
+  web:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: apache
+    depends_on:
+      - cli
+
+  db:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: mysql
+
+  cli:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: cli

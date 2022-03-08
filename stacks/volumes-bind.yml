@@ -1,0 +1,16 @@
+# Bind mount project volumes
+# Same as mounting host folders, but via named volumes.
+
+version: "3.9"
+
+volumes:
+  cli_home:  # /home/docker volume in cli
+  project_root:  # Project root volume (bind mount)
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PROJECT_ROOT}
+      o: bind
+  db_data:  # Database data volume
+  docksal_ssh_agent:  # Shared ssh-agent volume
+    external: true

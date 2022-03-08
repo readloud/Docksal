@@ -1,0 +1,19 @@
+[build]
+  base = "docs"
+  publish = "docs/public"
+  # This default build command adds a blocking robots.txt file.
+  # It is turned off only for the production site by using [context.master] below.
+  # DO NOT REMOVE THIS
+  command = "mv static/robots-disallow.txt static/robots.txt && hugo --enableGitInfo -b $DEPLOY_PRIME_URL"
+
+[build.environment]
+  HUGO_VERSION = "0.50"
+
+[context.production.environment]
+  HUGO_BASEURL = "https://docs.docksal.io/"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.master]
+  # This context is triggered by the `master` branch and allows search indexing
+  command = "hugo"
