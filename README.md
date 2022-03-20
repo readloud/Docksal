@@ -1,4 +1,4 @@
-# Docksal [![Latest Release](https://img.shields.io/github/release/docksal/docksal.svg?style=flat-square)](https://github.com/docksal/docksal/releases/latest) [![Build Status](https://img.shields.io/travis/docksal/docksal.svg?style=flat-square)](https://travis-ci.org/docksal/docksal)
+# Docksal [![Latest Release](https://img.shields.io/github/release/docksal/docksal.svg?style=flat-square)](https://github.com/docksal/docksal/releases/latest) [![Build Status](https://img.shields.io/travis/docksal/docksal.svg?style=flat-square)](https://travis-ci.org/github/docksal/docksal/builds)
 
 [![Documentation](https://img.shields.io/badge/📖-Documentation-blue.svg?style=for-the-badge)](https://docs.docksal.io)
 [![Blog](https://img.shields.io/badge/📰-Tips%20and%20Updates-orange.svg?style=for-the-badge)](https://blog.docksal.io)
